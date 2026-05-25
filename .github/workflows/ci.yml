@@ -3,7 +3,12 @@ name: Build and Test Machine API
 on:
   push:
     branches: [ "main" ]
+    #only triggers the pipeline if files inside the API app folder change!!!
+    paths:
+      - 'machine-status-api/**'
   pull_request:
+    paths:
+      - 'machine-status-api/**'
 
 # Gives the runner permission to save packages to GHCR
 permissions:
