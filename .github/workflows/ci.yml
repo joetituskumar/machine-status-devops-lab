@@ -1,13 +1,11 @@
-name: Build and Test Machine API
-
-on:
-  push:
-    branches: [ "main" ]
-  pull_request:
-
 jobs:
   build-test:
     runs-on: ubuntu-latest
+    
+    # This forces every 'run' step below to execute inside the subfolder
+    defaults:
+      run:
+        working-directory: ./machine-status-api
 
     steps:
       - name: Checkout source
@@ -18,6 +16,7 @@ jobs:
         with:
           python-version: "3.12"
 
+      # Now you can keep your original, clean commands!
       - name: Install dependencies
         run: |
           pip install -r requirements.txt
