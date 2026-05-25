@@ -1,7 +1,6 @@
 jobs:
   build-test:
     runs-on: ubuntu-latest
-    
     # This forces every 'run' step below to execute inside the subfolder
     defaults:
       run:
