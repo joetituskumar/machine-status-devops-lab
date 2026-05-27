@@ -475,36 +475,6 @@ Kubernetes Cluster
    v
 Machine Status API
 ```
-
----
-
-## 🎤 How to Explain This Project in an Interview
-
-A simple explanation:
-
-> I built a manufacturing-themed DevOps home lab. The application is a small FastAPI service that exposes machine status data. The main purpose was to practice the full DevOps lifecycle around it: Docker containerization, GitHub Actions CI, pushing images to GitHub Container Registry, deploying to Kubernetes with Helm, and using Argo CD for GitOps. I also used Terraform to create basic Kubernetes infrastructure like the namespace and ConfigMap.
-
-A more technical explanation:
-
-> When code changes are pushed to GitHub, the CI pipeline installs dependencies, checks the Python app, builds a Docker image, and pushes it to GHCR using the commit SHA as the tag. The Kubernetes deployment is managed with a Helm chart. Argo CD watches the repository and syncs the Helm chart into the cluster, so Git becomes the source of truth for the deployed state.
-
----
-
-## 🔍 What I Learned
-
-Through this project, I practiced:
-
-- Building a small FastAPI service
-- Writing a Dockerfile for Python applications
-- Creating a GitHub Actions workflow
-- Publishing images to GHCR
-- Understanding image tags and traceability
-- Writing and debugging Helm values/templates
-- Deploying services to Kubernetes
-- Using readiness and liveness probes
-- Understanding Argo CD automated sync and self-heal
-- Using Terraform with the Kubernetes provider
-
 ---
 
 ## 🛠️ Planned Improvements
@@ -526,7 +496,7 @@ Next improvements:
 
 ## 📷 Screenshots
 
-Screenshots can be added later for:
+Screenshots will be added later for:
 
 - GitHub Actions successful workflow
 - GHCR container image package
