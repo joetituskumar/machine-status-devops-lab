@@ -10,7 +10,7 @@ The application simulates a simple machine-status service for a factory/manufact
 
 ## 📌 Project Goal
 
-The goal of this project is to practice an end-to-end DevOps workflow:
+The goal of this project is to implement an end-to-end DevOps workflow:
 
 1. Build a small FastAPI application.
 2. Containerize the application with Docker.
