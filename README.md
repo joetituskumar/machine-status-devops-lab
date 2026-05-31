@@ -6,8 +6,6 @@ A manufacturing-themed DevOps home lab that demonstrates how to build, container
 
 The application simulates a simple machine-status service for a factory/manufacturing environment. The API exposes machine health, version information, and sample machine status data such as CNC, press, and robot machines.
 
-> This project is a learning/home-lab project. The focus is not a complex backend application, but the complete DevOps workflow around a small service.
-
 ---
 
 ## 📌 Project Goal
